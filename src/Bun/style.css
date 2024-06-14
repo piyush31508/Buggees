@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.white-box-cart {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+.dropmenu{
+  width: 300px !important;
+}
+.but:hover{
+  background-color: blue;
+}
+.but:active{
+  background-color: green;
+}
+/* General styles for screens under 600px */
+@media (max-width: 600px) {
+  /* Example: Center the navbar items and adjust their padding */
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 5px 10px;
+  }
+
+  /* Example: Make the carousel images fill the screen width */
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Example: Stack the card elements and adjust padding */
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .card .card-img-top {
+    width: 100%;
+    height: auto;
+  }
+
+  .card .card-body {
+    padding: 10px;
+  }
+
+  /* Example: Adjust the search bar to take full width */
+  .navbar .form-inline {
+    width: 100%;
+  }
+
+  .navbar .form-inline .form-control {
+    width: 100%;
+  }
+
+  /* Example: Adjust the carousel indicators */
+  .carousel-indicators {
+    bottom: -20px;
+  }
+
+  /*dropdown menus */
+  .dropdown-menu {
+    width: 100%;
+    left: 0 !important;
+    right: 0 !important;
+  }
+
+  /* Example: Stack liked items in the dropdown menu */
+  .dropdown-menu .liked-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dropdown-menu .liked-item img {
+    margin-bottom: 10px;
+  }
+}
